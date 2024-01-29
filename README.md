@@ -11,11 +11,11 @@ DisplayPort,
 PCIe M.2 SSD,
 Bios 1.22.1 - latest as of 2022-10-17
 
-OS: Big Sur 11.7.1
+OS: Sonoma 14.2.1
 
-OpenCore: 0.8.6
+OpenCore: 0.9.7
 
-SMBIOS: iMac 18,1
+SMBIOS: iMac 19,1
 
 SMBIOS that does not work: Macmini8,1
 
@@ -25,16 +25,15 @@ Dortania Guide for everything in setup: see https://dortania.github.io/OpenCore-
 <ul>
 <li>ethernet
 <li>audio
-<li>dual monitors (1920x1080) - a bit of a subtlety here, consistent with other people have experienced with dual monitors on 3050 variants. I could not get dual <b>HDMI</b> monitors to function. It would always cause a hang half way through the Apple boot screen. However, plugging a DP or DVI monitor into the DP port on the 3050 and an HDMI monitor into the HDMI monitor would result in both monitors working. This is my daily setup that has been solid from the start. A single DVI monitor plugged into the HDMI port functions, but to get dual monitors. I did not have to do any framebuffer patching. After reading a dozen descriptions about how to configure framebuffer within config.plist, I succeeded with a hardware solution - connect the proper cable to the correct port on the 3050. That was a painful 3 hour lesson.
-</ul>
+<li>Sleep/wake - Magically, this fixed in recent updates of OC.
 
 <b>What's not working</b>
 <ul>
+<li>dual monitors (1920x1080) - Consistent with other people have experienced with dual monitors on 3050 variants. I could not get the Display Port (DP) to function. HDMI 2k displays work great. Wish I had a 4k HDMI display to confirm.
+</ul>
 <li>Wifi and bluetooth - my computer was barebones, not including a drive or wireless card. Since I operate with hardwire ethernet, no need to test wireless. I would expect the same challenges as with other non-Apple wifi cards.
-<li>Sleep/wake - my computer is always on, so no need to test. I assume that HD630 iGPU will cause problems here as elsewhere.
 <li>Airdrop - no bluetooth
 <li>iMessage - never use it, but I suspect getting a working WiFi/Bluetooth card would allow this
-<li>Sidecar - while Sidecar shows up in System Preferences, I couldn't get a modern iPad to communicate even when plugged in via a USB cable
 <li>Microphone - others have mentioned this is a challenge. I don't need a microphone, so I disabled it in the BIOS
 </ul>
 
