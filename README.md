@@ -25,12 +25,12 @@ Dortania Guide for everything in setup: see https://dortania.github.io/OpenCore-
 <ul>
 <li>ethernet
 <li>audio
-<li>Sleep/wake - Magically, this fixed in recent updates of OC.
+<li>Sleep/wake - Magically, this started working in a recent OpenCore update.
+</ul>
 
 <b>What's not working</b>
 <ul>
 <li>dual monitors (1920x1080) - Consistent with other people have experienced with dual monitors on 3050 variants. I could not get the Display Port (DP) to function. HDMI 2k displays work great. Wish I had a 4k HDMI display to confirm.
-</ul>
 <li>Wifi and bluetooth - my computer was barebones, not including a drive or wireless card. Since I operate with hardwire ethernet, no need to test wireless. I would expect the same challenges as with other non-Apple wifi cards.
 <li>Airdrop - no bluetooth
 <li>iMessage - never use it, but I suspect getting a working WiFi/Bluetooth card would allow this
