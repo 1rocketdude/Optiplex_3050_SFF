@@ -11,9 +11,9 @@ DisplayPort,
 PCIe M.2 SSD,
 Bios 1.22.1 - latest as of 2022-10-17
 
-OS: Sonoma 14.2.1
+OS: Sonoma 14.3
 
-OpenCore: 0.9.7
+OpenCore: 0.9.8
 
 SMBIOS: iMac 19,1
 
@@ -21,16 +21,16 @@ SMBIOS that does not work: Macmini8,1
 
 Dortania Guide for everything in setup: see https://dortania.github.io/OpenCore-Install-Guide/config.plist/kaby-lake.html
 
-<b>What's working</b>
+<b>What's working - everything necessary to make this a stable mac-mini like computer</b>
 <ul>
 <li>ethernet
 <li>audio
 <li>Sleep/wake - Magically, this started working in a recent OpenCore update.
+<li>dual monitors (1920x1080) both HDMI; one attaches to the 3050's HDMI port and the other HDMI cable through an adapter to DisplayPort.
 </ul>
 
-<b>What's not working</b>
+<b>What hasn't been tested?</b>
 <ul>
-<li>dual monitors (1920x1080) - Consistent with other people have experienced with dual monitors on 3050 variants. I could not get the Display Port (DP) to function. HDMI 2k displays work great. Wish I had a 4k HDMI display to confirm.
 <li>Wifi and bluetooth - my computer was barebones, not including a drive or wireless card. Since I operate with hardwire ethernet, no need to test wireless. I would expect the same challenges as with other non-Apple wifi cards.
 <li>Airdrop - no bluetooth
 <li>iMessage - never use it, but I suspect getting a working WiFi/Bluetooth card would allow this
