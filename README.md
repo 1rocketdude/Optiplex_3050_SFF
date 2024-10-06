@@ -11,9 +11,9 @@ DisplayPort,
 PCIe M.2 SSD,
 Bios 1.22.1 - latest as of 2022-10-17
 
-OS: Sonoma 14.3
+OS: Sonoma 14.7 (likely the upgrade to Sequoia would be successful, but since this is my daily use machine, I'm waiting until early 2025 to give it a go)
 
-OpenCore: 0.9.8
+OpenCore: 1.0.1
 
 SMBIOS: iMac 19,1
 
@@ -27,13 +27,14 @@ Dortania Guide for everything in setup: see https://dortania.github.io/OpenCore-
 <li>audio
 <li>Sleep/wake - Magically, this started working in a recent OpenCore update.
 <li>dual monitors (1920x1080) both HDMI; one attaches to the 3050's HDMI port and the other HDMI cable through an adapter to DisplayPort.
+<li>Messages - just works as expected
+<li>USB - full USB3 speeds off all the ports
 </ul>
 
 <b>What hasn't been tested?</b>
 <ul>
 <li>Wifi and bluetooth - my computer was barebones, not including a drive or wireless card. Since I operate with hardwire ethernet, no need to test wireless. I would expect the same challenges as with other non-Apple wifi cards.
-<li>Airdrop - no bluetooth
-<li>iMessage - never use it, but I suspect getting a working WiFi/Bluetooth card would allow this
-<li>Microphone - others have mentioned this is a challenge. I don't need a microphone, so I disabled it in the BIOS
+<li>Airdrop - no bluetooth or wifi
+<li>Microphone - others have mentioned this is a challenge. I don't need a microphone, so I disabled it in the BIOS. I use a USB webcam with mic, which just works.
 </ul>
 
